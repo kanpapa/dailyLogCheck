@@ -1,25 +1,24 @@
-# dailyHttpdLogcheck
-Simple httpd log daily checker
+# dailyLogCheck
+Simple WOWHoneypot log daily checker
 
 Summary log file.
 
 - Source IP/ASN
-- User agent
 - Request
 
 # Usage
 
-1. clone hogehogehugahuga/dailyHttpdLogcheck
+1. clone hogehogehugahuga/dailyLogCheck
 2. Change the setting according to your own environment.
 
-- On dailyHttpdLogcheck.sh
+- On dailyLogCheck.sh
   - File path in `#env`
   - DISPLAYLINE in `#env`
 
-3. TEST; execute dailyHttpdLogCheck.sh
+3. TEST; execute dailyLogCheck.sh
 ```
-[root@wwwhost dailyHttpdLogcheck]# ./dailyHttpdLogcheck.sh 
-HTTPD log watcher (24/Jun/2018)
+[root@wwwhost dailyLogCheck]# ./dailyLogCheck.sh 
+WOWHoneypot log watcher (24/Jun/2018)
 ---Source IP/ASN counts---
 COUNT   IP      ASN
  12     xxx.xxx.xxx   ASNNNNN xxxxx.LTD
@@ -32,7 +31,7 @@ COUNT   IP      ASN
 
 - modify pushSlack.sh
   - WEBHOOKURL, CHANNEL, BOTNAME (%CHANGE... section)
-- modify dailyHttpdLogcheck-cron.sh
+- modify dailyLogCheck-cron.sh
   - add full path to GITDIR
 
 5. TEST pus2Slack;
@@ -41,7 +40,7 @@ COUNT   IP      ASN
 
 6. add cron
 
-- dailyHttpdLogcheck-cron.sh 
+- dailyLogCheck-cron.sh 
 
 # Contact
 
@@ -50,7 +49,7 @@ Twitter; @hogehuga
 # example
 
 ```
-# ./daiyHttpdLogcheck.sh
+# ./daiyLogCheck.sh
 HTTPD log watcher (24/Jun/2018)
 ---Source IP/ASN counts---
 COUNT   IP      ASN

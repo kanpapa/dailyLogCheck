@@ -1,6 +1,6 @@
 #!/bin/sh
 
 # git clon path
-GITDIR="/opt/dailyHttpdLogCheck"
+GITDIR="/home/user/dailyLogCheck"
 
-$GITDIR/dailyHttpdLogcheck.sh | $GITDIR/pushSlack.sh
+$GITDIR/dailyLogCheck.sh | $GITDIR/pushSlack.sh
